@@ -1,0 +1,38 @@
+/* Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.footer-widgets {
+  clear: both;
+  padding: 0;
+  text-align: center;
+  img{
+    margin-top: -1.4em;
+    margin-bottom: -1em;
+  }
+  .widget {
+    margin-bottom: 0px;
+  }
+  .wrap {
+    a, .entry-title a {
+      color: #fff;
+    }
+  }
+  a {
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+  }
+  p:last-child, .widget:last-child {
+    margin-bottom: 0;
+  }
+  color: #fff;
+  p {
+    color: #fff;
+  }
+  .widget-title {
+    color: #fff;
+    font-size: 20px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+}

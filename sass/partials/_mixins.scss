@@ -1,0 +1,42 @@
+.btn {
+
+ border: 2px solid #252525;
+ color: #252525;
+ text-decoration: none;
+ padding: 5px 10px;
+ border-radius: 3px;
+ font-family: 'Sans Serif';
+ font-size:2em;
+
+}
+
+//Transition
+// Usage: @include transition(all, 0.1s, ease-in-out);
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+
+@mixin font-face($font-family, $file-path, $font-weight, $font-style) {
+	@font-face {
+		font-family: $font-family;
+		src: url('#{$file-path}.eot');
+		src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+		url('#{$file-path}.woff') format('woff'),
+		url('#{$file-path}.ttf') format('truetype'),
+		url('#{$file-path}.svg##{$font-family}') format('svg');
+		font-weight: $font-weight;
+		font-style: $font-style;
+	}
+	//Chrome for Windows rendering fix:
+	//http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
+	@media screen and(-webkit-min-device-pixel-ratio: 0){
+		@font-face {
+			font-family: $font-family;
+			src: url('#{$file-path}.svg##{$font-family}') format('svg');
+		}
+	}
+}

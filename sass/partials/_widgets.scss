@@ -1,0 +1,53 @@
+/* Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.widget {
+  word-wrap: break-word;
+  ol > li {
+    list-style-position: inside;
+    list-style-type: decimal;
+    padding-left: 20px;
+    text-indent: -20px;
+  }
+  li li {
+    border: 0;
+    margin: 0 0 0 30px;
+    padding: 0;
+  }
+}
+
+.widget_calendar {
+  table {
+    width: 100%;
+  }
+  td, th {
+    text-align: center;
+  }
+}
+
+/* Featured Content
+--------------------------------------------- */
+
+.featured-content {
+  .entry {
+    padding-bottom: 60px;
+  }
+  .entry-content p {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+}
+
+.featuredpost .entry-title {
+  font-size: 3rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+}
+
+/* Buddypress
+--------------------------------------------- */
+#buddypress ul.item-list li img.avatar {
+  max-width: 50px;
+}
+

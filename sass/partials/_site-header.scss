@@ -1,0 +1,87 @@
+/* Site Header
+---------------------------------------------------------------------------------------------------- */
+
+.site-header {
+  background-color: transparent;
+  width: 100%;
+  min-height: 77px;
+  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  color: lighten(white, 50%);
+}
+
+.header-image .site-header {
+    
+    background: transparent;
+    border: none;
+}
+
+.admin-bar .site-header {
+  top: 32px;
+}
+
+.site-header.shrink {
+  @include transition(all, 1s, ease-in-out);
+  background-color: white;
+}
+
+.header-image .site-header.shrink {
+      
+}
+
+/* Site Title and Description
+--------------------------------------------- */
+
+.title-area {
+  float: left;
+  margin-top: 8px;
+}
+
+.site-title {
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  a {
+    color: #333;
+    &:hover, &:focus {
+      color: #333;
+    }
+  }
+}
+
+.header-image {
+  .nav-primary:not(button) {
+    
+  }
+  .site-header {
+     
+  }
+  .site-title {
+    display: block;
+    text-indent: -9999px;
+    > a {
+      background-position: center center !important;
+      background-size: contain !important;
+      float: left;
+      min-height: 70px;
+      width: 300px;
+    }
+  }
+  .title-area {
+    margin: 1em 0 0;
+  }
+}
+
+.site-description {
+  display: block;
+  height: 0;
+  margin-bottom: 0;
+  text-indent: -9999px;
+}

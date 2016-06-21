@@ -1,0 +1,528 @@
+/* Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+
+/* Site Container
+--------------------------------------------- */
+
+.site-container {
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -ms-animation: fadein 1s;
+  -o-animation: fadein 1s;
+  animation: fadein 1s;
+}
+
+.brotherhood-landing .site-container {
+  width: 100%;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Site Inner
+--------------------------------------------- */
+
+.site-inner {
+  clear: both;
+}
+
+/* Front-Page-Hero
+--------------------------------------------- */
+
+
+/* Front-Page 1
+--------------------------------------------- */
+
+.front-page-1 {
+  margin-top: 1.5em;
+  margin-bottom: 4em;
+
+  p {
+    text-align: right;
+    padding: 5% 1%;
+  }
+  .btn {
+    float: right;
+    margin: 2% 28%;
+  }
+}
+#blue-signup {
+  width: 100%;
+  height: 100px;
+  display: inline-block;
+  background: #0C3978;
+  margin-bottom: 4em;
+}
+.subscribe {
+
+}
+
+.first-diamond {
+  float: left;
+  width: 45%;
+  @include transition(all, .5s, fade-in-left);
+}
+
+.first-diamond-FULL {
+  display: none;
+}
+
+.discover-text {
+  float: right;
+  width: 50%;
+  a.button {
+    float: right;
+  }
+}
+
+.discover-text-FULL {
+  display: none;
+}
+
+/* Front-Page 2
+--------------------------------------------- */
+
+.front-page-2 {
+  margin-bottom: 4em;
+}
+
+.hero-video {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Front-Page 3
+--------------------------------------------- */
+
+.front-page-3 {
+  margin-top: -.4em;
+  margin-bottom: 4em;
+  p {
+    text-align: left;
+    padding: 5% 1%;
+  }
+  .btn {
+    float: left;
+    margin: 2% 28%;
+  }
+}
+
+.second-diamond {
+  float: right;
+  width: 45%;
+}
+
+.second-diamond-FULL {
+  display: none;
+}
+
+.explore-text {
+  float: left;
+  width: 50%;
+  a.button {
+    float: left;
+  }
+}
+
+.explore-text-FULL {
+  display: none;
+}
+
+/* Front-Page 3
+--------------------------------------------- */
+
+.latest-text {
+  display: block;
+  margin: 0 auto;
+  width: 45%;
+}
+
+/* Front-Page 4
+--------------------------------------------- */
+#front-page-4 {
+  margin-bottom: 3em;
+  //.entry-header, .entry-content {
+   // display: none;
+  //}
+  .post {
+    width: 33.333%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    img:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: url(#);
+  }
+}
+  a.alignleft {
+    max-width: 100%;
+  }
+}
+
+.brotherhood-hero {
+  max-width:100%;
+  height:400px;
+  background-size:cover;
+  background-position:50% 50%;
+}
+
+
+/* About Page
+----------------------------------------------- */
+.gsb-banner {
+  @include transitioni(scale, 2);
+}
+
+.about-page-hero.widget-area {
+    border-bottom: 3px solid white;
+    font-family: Oregon;
+    letter-spacing: 4px;
+    position: relative;
+    bottom: 3.5em;
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    z-index: 500;
+    //@include animation(fadein, 0.5s, ease);
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+
+.about-page-1 {
+  padding: 0 3em 3em;
+}
+
+.jim {
+  margin: 0;
+}
+
+.jim-text p {
+  padding: 2em 3em 1em;
+}
+.about-button {
+    display: block !important;
+    margin: 0 auto;
+  }
+
+/*Blog Page
+--------------------------------------------------------------------------------------------------*/
+.blog-page .gsb-banner {
+  display: none;
+}
+
+.above-post-hero {
+  max-width:100%;
+  height:400px;
+  background-size:cover;
+  background-position:50% 50%;
+}
+
+.blog-page-hero {
+  max-height: 400px;
+  height: 100%;
+  background-size: cover; 
+  overflow: hidden;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background-color: black;
+  opacity: .5;
+}
+
+.blog-page-1.widget-area {
+    border-bottom: 3px solid white;
+    font-family: Oregon;
+    letter-spacing: 4px;
+    position: relative;
+    bottom: 5em;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    //@include transition(all, 0.3s, ease-in-out);
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+
+.blog-page-2, .blog-page-3 {
+  width: 66.66%;
+  float: left;
+  margin-top: -6.5em;
+  padding: 2em;
+}
+
+/*
+Our Trips - Portfolio
+---------------------------------------------------------------------------------------------------- */
+
+.page-id-221 .site-inner {
+  max-width: 1280px;
+  display: block;
+  margin: 0 auto;
+  margin-top: -2em;
+}
+
+#portfolio-page-hero {
+  border-bottom: 3px solid white;
+    font-family: Oregon;
+    letter-spacing: 4px;
+    position: relative;
+    bottom: 2.8em;
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    height: 100px;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    z-index: 500;
+    //@include animation(fadein, 0.5s, ease);
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+
+.entry-portfolio {
+  margin: 0 0 40px;
+  padding: 0;
+}
+
+.content .portfolio {
+  background: none;
+  float: left;
+  margin: 0 .5% 40px 2% !important;
+  overflow: hidden;
+  padding: 0;
+  width: 30.555555555%;
+}
+
+.portfolio .post-image {
+  border: none;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.portfolio .post-image:hover {
+  -moz-transition:all .5s ease; 
+  -o-transition:all .5s ease; 
+  -webkit-transition:all .5s ease;
+  transition:all .5s ease;
+  opacity: 0.6;
+}
+
+.portfolio .post .entry-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+
+.portfolio .entry-title a {
+  color: #333;
+}
+
+.portfolio .entry-title a:hover {
+  color: #4c5e6b;
+}
+  
+.portfolio .entry-title a {
+  margin: 0;
+  text-decoration: none;
+}
+
+.portfolio .entry-meta {
+  display: none;
+}
+
+.portfolio .more-link {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: #fff;
+  display: block;
+  padding: 8px 12px;;
+  margin: 20px 0 0;
+  text-align: center;
+  text-decoration: none;  
+  max-width: 150px;
+}
+  
+.content .portfolio .more-link:hover {
+  background: #555;
+  color: #fff;
+}
+
+.portfolio-clear {
+  clear: none;
+}
+
+.portfolio-clear-2 {
+  clear: both;
+}
+
+/*
+Single Post
+---------------------------------------------------------------------------------------------------- */
+.single .site-inner {
+  margin: 5em 0;
+}
+
+/*
+Register Page
+---------------------------------------------------------------------------------------------------- */
+
+.register-page-hero {
+  max-height: 400px;
+  height: 100%;
+  background-size: cover; 
+  overflow: hidden;
+  img {    
+  margin-top: -3em;
+  }
+}
+
+.register-page-1 {
+    clear: both;
+    border-bottom: 3px solid white;
+    font-family: Oregon;
+    letter-spacing: 4px;
+    position: relative;
+    bottom: 3.5em;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    z-index: 500;
+    //@include animation(fadein, 0.5s, ease);
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+
+/*
+BuddyPress CSS OVERRIDE
+---------------------------------------------------------------------------------------------------- */
+#buddypress{
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: -0.4em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

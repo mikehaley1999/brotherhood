@@ -1,0 +1,98 @@
+/* Plugins
+---------------------------------------------------------------------------------------------------- */
+
+/* Genesis eNews Extended
+--------------------------------------------- */
+
+.enews-widget {
+  input {
+    margin-bottom: 30px;
+  }
+  p {
+    margin-bottom: 15px;
+  }
+}
+
+.enews form + p {
+  margin-top: 24px;
+}
+
+/* Genesis Simple Share
+--------------------------------------------- */
+
+.content {
+  .share-after {
+    margin-bottom: 20px;
+  }
+  a {
+    &.count {
+      border: none;
+      font-weight: 400;
+      &:hover, &:focus {
+        border: none;
+        font-weight: 400;
+      }
+    }
+    &.share {
+      border: none;
+      font-weight: 400;
+      &:hover, &:focus {
+        border: none;
+        font-weight: 400;
+      }
+    }
+  }
+  .share-filled {
+    .share, .count {
+      border-radius: 0;
+    }
+    .facebook .count, .googlePlus .count, .linkedin .count, .pinterest .count, .stumbleupon .count, .twitter .count {
+      color: #333;
+      border: 1px solid #333;
+      &:hover {
+        color: #333;
+        border: 1px solid #333;
+      }
+    }
+    .facebook {
+      .share, &:hover .count {
+        background: #333 !important;
+      }
+    }
+    .googlePlus {
+      .share, &:hover .count {
+        background: #333 !important;
+      }
+    }
+    .linkedin {
+      .share, &:hover .count {
+        background: #333 !important;
+      }
+    }
+    .pinterest {
+      .share, &:hover .count {
+        background: #333 !important;
+      }
+    }
+    .stumbleupon {
+      .share, &:hover .count {
+        background: #333 !important;
+      }
+    }
+    .twitter {
+      .share, &:hover .count {
+        background: #333 !important;
+      }
+    }
+    .facebook:hover .count, .googlePlus:hover .count, .linkedin:hover .count, .pinterest:hover .count, .stumbleupon:hover .count, .twitter:hover .count {
+      color: #fff;
+    }
+  }
+}
+
+/* Jetpack
+--------------------------------------------- */
+
+#wpstats {
+  display: none;
+}
