@@ -327,9 +327,21 @@ genesis_register_sidebar( array(
 ) );
  
 genesis_register_sidebar( array(
-	'id'		  => 'portfolio-page-hero',
-	'name'		  => __('Portfolio Page Hero', 'brotherhood'),
-	'description' => __('This is the Hero Image on the Portfolio Page', 'brotherhood'),
+	'id'		  => 'our-trips-page-hero',
+	'name'		  => __('Our Trips Page Hero', 'brotherhood'),
+	'description' => __('This is the Hero Image on the Our Trips Page', 'brotherhood'),
+) );
+
+genesis_register_sidebar( array(
+	'id'		  => 'our-trips-page-1',
+	'name'		  => __('Our Trips Page 1', 'brotherhood'),
+	'description' => __('This is the First Widget on the Our Trips Page', 'brotherhood'),
+) );
+
+genesis_register_sidebar( array(
+	'id'		  => 'our-trips-page-2',
+	'name'		  => __('Our Trips Page 2', 'brotherhood'),
+	'description' => __('This is the Second Widget on the Our Trips Page', 'brotherhood'),
 ) );
 
 genesis_register_sidebar( array(

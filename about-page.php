@@ -39,5 +39,4 @@ function brotherhood_about_widget_area() {
     
 }
 
-
 genesis(); 

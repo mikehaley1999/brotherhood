@@ -14,7 +14,7 @@ remove_action( 'genesis_loop', 'genesis_do_loop' );
 //* Add Custom Body Class
 add_filter( 'body_class', 'brotherhood_our_trips_body_class' );
 function brotherhood_our_trips_body_class( $classes ) {
-	$classes[] = 'about-page';
+	$classes[] = 'our-trips-page';
 	return $classes;
 }
 
@@ -38,6 +38,5 @@ function brotherhood_our_trips_widget_area() {
 	) );
     
 }
-
 
 genesis(); 
