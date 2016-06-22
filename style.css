@@ -62,7 +62,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	- Max-width: 800px
 - Print Styles
 */
-@import url(https://fonts.googleapis.com/css?family=Muli);
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300);
 .btn {
   border: 2px solid #252525;
   color: #252525;
@@ -934,6 +934,13 @@ th {
 
 /* About Page
 ----------------------------------------------- */
+.gsb-banner {
+  -webkit-transition: scale 2 ease;
+  -moz-transition: scale 2 ease;
+  -ms-transition: scale 2 ease;
+  -o-transition: scale 2 ease;
+  transition: scale 2 ease; }
+
 .about-page-hero.widget-area {
   border-bottom: 3px solid white;
   font-family: Oregon;
@@ -1031,7 +1038,7 @@ th {
   padding: 2em; }
 
 /*
-Our Trips - Portfolio
+Our Trips Page
 ---------------------------------------------------------------------------------------------------- */
 .page-id-221 .site-inner {
   max-width: 1280px;
@@ -1039,7 +1046,7 @@ Our Trips - Portfolio
   margin: 0 auto;
   margin-top: -2em; }
 
-#portfolio-page-hero {
+.our-trips-page-hero.widget-area {
   border-bottom: 3px solid white;
   font-family: Oregon;
   letter-spacing: 4px;
@@ -1062,73 +1069,6 @@ Our Trips - Portfolio
   -o-animation: fadein 3s;
   /* Opera < 12.1 */
   animation: fadein 3s; }
-
-.entry-portfolio {
-  margin: 0 0 40px;
-  padding: 0; }
-
-.content .portfolio {
-  background: none;
-  float: left;
-  margin: 0 .5% 40px 2% !important;
-  overflow: hidden;
-  padding: 0;
-  width: 30.555555555%; }
-
-.portfolio .post-image {
-  border: none;
-  margin: 0 0 10px;
-  padding: 0; }
-
-.portfolio .post-image:hover {
-  -moz-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-  opacity: 0.6; }
-
-.portfolio .post .entry-title {
-  font-size: 24px;
-  font-weight: 400;
-  margin: 10px 0;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 1em 0; }
-
-.portfolio .entry-title a {
-  color: #333; }
-
-.portfolio .entry-title a:hover {
-  color: #4c5e6b; }
-
-.portfolio .entry-title a {
-  margin: 0;
-  text-decoration: none; }
-
-.portfolio .entry-meta {
-  display: none; }
-
-.portfolio .more-link {
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  color: #fff;
-  display: block;
-  padding: 8px 12px;
-  margin: 20px 0 0;
-  text-align: center;
-  text-decoration: none;
-  max-width: 150px; }
-
-.content .portfolio .more-link:hover {
-  background: #555;
-  color: #fff; }
-
-.portfolio-clear {
-  clear: none; }
-
-.portfolio-clear-2 {
-  clear: both; }
 
 /*
 Single Post
@@ -1480,13 +1420,6 @@ a[rel~="attachment"] {
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   background-color: white; }
-
-.header-image .shrink .site-title > a 
-{
-    background: url(/wp-content/uploads/2016/06/cropped-FINAL-BLACK-brotherhood-header-logo.png) no-repeat !important;
-    background-size: contain !important;
-    background-position: center center !important;
-}
 
 /* Site Title and Description
 --------------------------------------------- */
@@ -1905,28 +1838,50 @@ p.form-submit {
 /* Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 .footer-widgets {
-  clear: both;
-  padding: 0;
-  text-align: center;
-  color: #252525; }
-  .footer-widgets img {
-    margin-top: -1.4em;
-    margin-bottom: -1em; }
-  .footer-widgets .widget {
-    margin-bottom: 0px; }
-  .footer-widgets .wrap a, .footer-widgets .wrap .entry-title a {
-    color: #fff; }
-  .footer-widgets a:hover, .footer-widgets a:focus {
-    text-decoration: none; }
-  .footer-widgets p:last-child, .footer-widgets .widget:last-child {
-    margin-bottom: 0; }
-  .footer-widgets p {
-    color: #fff; }
-  .footer-widgets .widget-title {
-    color: #fff;
-    font-size: 20px;
-    font-size: 2rem;
-    letter-spacing: 1px; }
+  clear: both;
+  padding: 0;
+  text-align: center;
+  color: #252525;
+  width: 100%;
+ }
+  .footer-widgets img {
+    margin-top: -1.4em;
+    margin-bottom: -1em; }
+  .footer-widgets .widget {
+    margin-bottom: 0px; }
+  .footer-widgets .wrap a, .footer-widgets .wrap .entry-title a {
+    color: #fff; }
+  .footer-widgets a:hover, .footer-widgets a:focus {
+    text-decoration: none; }
+  .footer-widgets p:last-child, .footer-widgets .widget:last-child {
+    margin-bottom: 0; }
+  .footer-widgets p {
+    color: #fff; }
+  .footer-widgets .widget-title {
+    color: #fff;
+    font-size: 20px;
+    font-size: 2rem;
+    letter-spacing: 1px; }
+
+.footerleft,
+.footerleft a {
+color: #fff;
+text-align: left;
+}
+
+.footer-widgets-1.widget-area {
+width: 100%;
+}
+
+.footer-widgets-2.widget-area {
+float: left;
+background-color: #0C3978;
+width: 100%;
+padding: 30px 5% 30px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
 
 /* Site Footer
 ---------------------------------------------------------------------------------------------------- */
@@ -1938,20 +1893,6 @@ p.form-submit {
   text-align: center; }
   .site-footer p {
     margin-bottom: 0; }
-
-.footerleft,
-.footerleft a {
-	color: #fff;
-	text-align: left;
-}
-
-
-.footer-widgets-3.widget-area {
-	background-color: #0C3978;
-}
-
-
-
 
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */

@@ -227,7 +227,7 @@
 /* About Page
 ----------------------------------------------- */
 .gsb-banner {
-  @include transitioni(scale, 2);
+  @include transition(scale, 2, ease);
 }
 
 .about-page-hero.widget-area {
@@ -332,7 +332,7 @@
 }
 
 /*
-Our Trips - Portfolio
+Our Trips Page
 ---------------------------------------------------------------------------------------------------- */
 
 .page-id-221 .site-inner {
@@ -342,7 +342,7 @@ Our Trips - Portfolio
   margin-top: -2em;
 }
 
-#portfolio-page-hero {
+.our-trips-page-hero.widget-area {
   border-bottom: 3px solid white;
     font-family: Oregon;
     letter-spacing: 4px;
@@ -364,85 +364,7 @@ Our Trips - Portfolio
             animation: fadein 3s;
 }
 
-.entry-portfolio {
-  margin: 0 0 40px;
-  padding: 0;
-}
 
-.content .portfolio {
-  background: none;
-  float: left;
-  margin: 0 .5% 40px 2% !important;
-  overflow: hidden;
-  padding: 0;
-  width: 30.555555555%;
-}
-
-.portfolio .post-image {
-  border: none;
-  margin: 0 0 10px;
-  padding: 0;
-}
-
-.portfolio .post-image:hover {
-  -moz-transition:all .5s ease; 
-  -o-transition:all .5s ease; 
-  -webkit-transition:all .5s ease;
-  transition:all .5s ease;
-  opacity: 0.6;
-}
-
-.portfolio .post .entry-title {
-    font-size: 24px;
-    font-weight: 400;
-    margin: 10px 0;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 1em 0;
-}
-
-.portfolio .entry-title a {
-  color: #333;
-}
-
-.portfolio .entry-title a:hover {
-  color: #4c5e6b;
-}
-  
-.portfolio .entry-title a {
-  margin: 0;
-  text-decoration: none;
-}
-
-.portfolio .entry-meta {
-  display: none;
-}
-
-.portfolio .more-link {
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  color: #fff;
-  display: block;
-  padding: 8px 12px;;
-  margin: 20px 0 0;
-  text-align: center;
-  text-decoration: none;  
-  max-width: 150px;
-}
-  
-.content .portfolio .more-link:hover {
-  background: #555;
-  color: #fff;
-}
-
-.portfolio-clear {
-  clear: none;
-}
-
-.portfolio-clear-2 {
-  clear: both;
-}
 
 /*
 Single Post
